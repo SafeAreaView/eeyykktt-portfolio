@@ -174,7 +174,7 @@ section:nth-child(even) {
     background-color: transparent;
 }
 
-button {
+.lang-btn {
     font-family: 'gilroybold';
     font-size: 16px;
     line-height: 20px;
@@ -184,12 +184,12 @@ button {
     cursor: pointer;
 }
 
-button:disabled {
+.lang-btn:disabled {
     color: #828282;
     cursor: not-allowed;
 }
 
-buttor:active {
+.lang-btn:active {
     color: #070707;
 }
 
