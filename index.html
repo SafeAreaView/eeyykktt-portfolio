@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go up</button>
     <div class="wrapper">
         <header>
             <div class="container header">
@@ -33,7 +34,10 @@
                             Sorokina</h1>
                         <p class="subtitle">UX | UI designer <br>
                             19 years old, Odessa, Ukraine</p>
-                        <span class="rotated">UKR | ENG</span>
+                        <div class="language-buttons rotated"><button class="lang-btn rotated"><span
+                                    class="rotated">UKR</span></button> <span>|</span>
+                            <button class="lang-btn rotated" disabled><span class="rotated">ENG</span></button>
+                        </div>
                     </div>
                     <div class="home-img">
 
@@ -125,6 +129,7 @@
             </div>
         </footer>
     </div>
+    <script src="./assets/script/main.js"></script>
 </body>
 
 </html>
