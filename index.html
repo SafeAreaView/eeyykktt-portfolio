@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eeyykktt</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style/normalize.css">
     <link rel="stylesheet" href="./assets/style/index.css">
     <link rel="stylesheet" href="./assets/style/adapt.css">
 </head>
-<!-- TODO:Переименовать классы
-          Сделать смену языка
-          Сделать адаптив
+<!-- TODO:Сделать адаптив
+    Подобрать шрифты
 -->
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Go up</button>
+    <button onclick="topFunction()" id="myBtn" class="lang" title="Go to top" key="up">Go up</button>
     <div class="wrapper">
         <header>
             <div class="container header">
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li><a class="list-item active" href="#home">Home</a></li>
-                        <li><a class="list-item" href="#about">About me</a></li>
-                        <li><a class="list-item" href="#skills">Skills</a></li>
-                        <li><a class="list-item" href="#portfolio">Portfolio</a></li>
-                        <li><a class="list-item" href="#contacts">Contacts</a></li>
+                        <li><a class="list-item lang active" key="home" href="#home">Home</a></li>
+                        <li><a class="list-item lang" key="about" href="#about">About me</a></li>
+                        <li><a class="list-item lang" key="skills" href="#skills">Skills</a></li>
+                        <li><a class="list-item lang" key="portfolio" href="#portfolio">Portfolio</a></li>
+                        <li><a class="list-item lang" key="contacts" href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,13 +36,14 @@
             <section class="home">
                 <div class="container">
                     <div class="home-info">
-                        <h1 class="lead-title">Ekaterina <br>
+                        <h1 class="lead-title lang" key="name">Ekaterina <br>
                             Sorokina</h1>
-                        <p class="subtitle">UX | UI designer <br>
+                        <p class="subtitle lang" key="aboutme">UX | UI designer <br>
                             19 years old, Odessa, Ukraine</p>
-                        <div class="language-buttons rotated"><button class="lang-btn rotated"><span
-                                    class="rotated">UKR</span></button> <span>|</span>
-                            <button class="lang-btn rotated" disabled><span class="rotated">ENG</span></button>
+                        <div class="language-buttons translate rotated">
+                            <button id="ukr" class="lang-btn translate rotated">
+                                <span class="rotated">UKR</span></button> <span>|</span>
+                            <button id="en" class="lang-btn translate rotated"><span class="rotated">ENG</span></button>
                         </div>
                     </div>
                     <div class="home-img">
@@ -51,10 +54,10 @@
             <section id="about">
                 <div class="container about">
                     <div class="about-textbox">
-                        <h2 class="title">About me</h2>
-                        <p class="subtitle">Hi, I'm Ekaterina – UX/UI designer from Odessa. <br>
-                            I'm interested in design and everything connected with it. <br>
-                            I'm studying at course "Web and mobile design <br>
+                        <h2 class="title lang" key="about">About me</h2>
+                        <p class="subtitle lang" key="aboutText">Hi, I'm Ekaterina – UX/UI designer from Odessa.
+                            I'm interested in design and everything connected with it.
+                            I'm studying at course "Web and mobile design
                             interfaces".
                         </p>
                     </div>
@@ -63,8 +66,8 @@
             <section id="skills">
                 <div class="container skills">
                     <div class="skills-wrapper">
-                        <h2 class="title">Skills</h2>
-                        <p class="subtitle">I work in such programs as</p>
+                        <h2 class="title lang" key="skills">Skills</h2>
+                        <p class="subtitle lang" key="workAt">I work in such programs as</p>
                         <ul class="programs-list">
                             <div>
                                 <div class="card">
@@ -103,7 +106,7 @@
             </section>
             <section id="portfolio">
                 <div class="container portfolio">
-                    <h2 class="title">Portfolio</h2>
+                    <h2 class="title lang" key="portfolio">Portfolio</h2>
                     <div class="site-block">
                         <div class="site-screen">
                             <img src="./assets/image/site-preview.png" alt="Online fashion store site preview">
@@ -115,8 +118,8 @@
         </main>
         <footer id="contacts">
             <div class="container contacts">
-                <h2 class="title">Contacts</h2>
-                <p class="subtitle">Want to know more or just chat? <br>
+                <h2 class="title lang" key="contacts">Contacts</h2>
+                <p class="subtitle lang" key="contactsCase">Want to know more or just chat?
                     You are welcome!</p>
                 <ul class="footer-list">
                     <li><a href="#" class="link"><img src="./assets/icon/linkedin.svg" alt="linkedin logotype link"></a>
@@ -128,12 +131,13 @@
                     <li><a href="#" class="link"><img src="./assets/icon/linkedin.svg" alt="linkedin logotype link"></a>
                     </li>
                 </ul>
-                <p class="card-name">Like me on <br>
+                <p class="card-name lang" key="likeMe">Like me on
                     LinkedIn, Instagram, Behance, Telegram</p>
             </div>
         </footer>
     </div>
     <script src="./assets/script/main.js"></script>
+    <script src="./assets/script/jquery.min.js"></script>
 </body>
 
 </html>

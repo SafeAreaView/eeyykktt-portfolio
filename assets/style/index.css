@@ -4,7 +4,8 @@
 }
 
 @font-face {
-    font-family: 'gilroymedium';
+    font-family: Montserrat;
+    font-weight: medium;
     src: url('../font/gilroy-medium-webfont.woff2') format('woff2'),
         url('../font/gilroy-medium-webfont.woff') format('woff');
     font-weight: normal;
@@ -13,7 +14,8 @@
 }
 
 @font-face {
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     src: url('../font/gilroy-bold-webfont.woff2') format('woff2'),
         url('../font/gilroy-bold-webfont.woff') format('woff');
     font-weight: normal;
@@ -80,7 +82,8 @@ a {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
 }
 
 .container {
@@ -89,7 +92,8 @@ a {
 }
 
 .title {
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 34px;
     line-height: 42px;
     text-align: center;
@@ -97,15 +101,19 @@ a {
 }
 
 .lead-title {
+    max-width: 200px;
     margin: 0;
     padding: 0;
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 47px;
     color: #070707;
 }
 
 .subtitle {
-    font-family: 'gilroymedium';
+    width: 400px;
+    font-family: Montserrat;
+    font-weight: medium;
     font-size: 18px;
     line-height: 30px;
     color: #070707;
@@ -117,7 +125,8 @@ section:nth-child(even) {
 }
 
 .list-item {
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     color: #828282;
@@ -130,7 +139,8 @@ section:nth-child(even) {
 }
 
 .active {
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     color: #070707;
@@ -166,7 +176,8 @@ section:nth-child(even) {
 .rotated {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     border: none;
@@ -174,8 +185,13 @@ section:nth-child(even) {
     background-color: transparent;
 }
 
+.lang {
+    font-family: Montserrat;
+}
+
 .lang-btn {
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     border: none;
@@ -224,11 +240,13 @@ section:nth-child(even) {
     height: 350px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
 .card-name {
-    font-family: 'gilroybold';
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
@@ -264,7 +282,8 @@ section:nth-child(even) {
 }
 
 .site-link {
-    font-family: 'gilroymedium';
+    font-family: Montserrat;
+    font-weight: medium;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
